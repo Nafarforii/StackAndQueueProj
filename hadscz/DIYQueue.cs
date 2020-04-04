@@ -25,14 +25,16 @@ namespace QueueImplementation
                 if (array[i] == null)
                 {
                     array[i] = item;
-                    break;
+                    return;
                 }
             }
+
+            throw new Exception("The queue is full!");
         }
 
         public int Peek()
         {
-            return (int)array[0];
+            return array[0] ?? throw new Exception("Queue is empty!");
         }
     }
 }
