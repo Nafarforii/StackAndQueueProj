@@ -18,7 +18,7 @@ namespace StackImplementations
                 }
             }
 
-            throw new Exception("The queue is empty!");
+            throw new Exception("The stack is empty!");
         }
 
         public int Pop()
@@ -33,7 +33,7 @@ namespace StackImplementations
                 }
             }
 
-            throw new Exception("The queue is empty!");
+            throw new Exception("The stack is empty!");
         }
 
         public void Push(int item)
@@ -47,7 +47,7 @@ namespace StackImplementations
                 }
             }
 
-            throw new Exception("The queue is full!");
+            throw new Exception("The stack is full!");
         }
     }
 }
