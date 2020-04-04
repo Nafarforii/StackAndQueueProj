@@ -7,7 +7,7 @@ namespace QueueImplementation
     public interface IQueue
     {
         void Enqueue(int item);
-        int Dequeue();
+        int? Dequeue();
         int Peek();
     }
 }

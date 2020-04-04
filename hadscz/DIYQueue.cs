@@ -6,15 +6,16 @@ namespace QueueImplementation
     {
         int?[] array = new int?[5];
 
-        public int Dequeue()
+        public int? Dequeue()
         {
             int? temp = array[0];
+            array[0] = null;
             for (int i = 1; i < array.Length; i++)
             {
-                array[0] = null;
                 array[i - 1] = array[i];
             }
-            return (int)temp;
+            array[array.Length - 1] = null;
+            return temp;
         }
 
         public void Enqueue(int item)
